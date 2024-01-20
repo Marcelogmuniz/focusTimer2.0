@@ -1,0 +1,106 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-background);
+}
+
+:root {
+  --bg-background: rgba(241, 250, 238, 1);
+  --bg-card-default: rgba(29, 53, 87, 1);
+  --bg-card-nature: rgba(58, 90, 64, 1);
+  --bg-card-rain: rgba(2, 121, 157, 1);
+  --bg-card-coffe: rgba(127, 85, 57, 1);
+  --bg-card-flame: rgba(227, 100, 20, 1);
+  --bg-card-red: rgba(230, 57, 70, 1)
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+    display: flex;
+    margin: 0rem 14rem;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.timer-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.timer-controls .time {
+  display: flex;
+}
+
+.timer-controls span {
+  color: var(--bg-card-red);
+  text-align: center;
+  font-size: 10rem;
+  font-weight: 600;
+}
+
+.timer-controls .button-controls button {
+  background-color: transparent;
+  border: none;
+  font-size: 4rem;
+  color: var(--bg-card-red);
+}
+
+.timer-controls .button-controls button:hover {
+  cursor: pointer;
+}
+
+.timer-controls .button-controls {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+.sounds-controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.sounds-controls .cards-sounds {
+  background-color: var(--bg-card-default);
+  display: flex;
+  width: 10rem;
+  height: 12rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.sounds-controls .cards-sounds:hover {
+  cursor: pointer;
+}
+
+.sounds-controls .cards-sounds i {
+  font-size: 3.5rem;
+  background-color: transparent;
+  color: var(--bg-background);
+}
+
+.running .ph-play-circle,
+.running .ph-clock,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle {
+    display: none;
+}

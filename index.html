@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Focus Timer 2.0</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="principal">
+      <main>
+        <section class="timer-controls">
+          <div class="time">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+          </div>
+
+          <section id="controls" class="button-controls">
+            <button
+              data-action="toggleRunning"
+              class="ph ph-play-circle"
+            ></button>
+            <button
+              data-action="toggleRunning"
+              class="ph ph-pause-circle"
+            ></button>
+            <button data-action="set" class="ph ph-clock"></button>
+            <button data-action="reset" class="ph ph-stop-circle"></button>
+            <button data-action="addTime" class="ph ph-plus-circle"></button>
+            <button data-action="subTime" class="ph ph-minus-circle"></button>
+          </section>
+        </section>
+
+        <section id="soundsControls" class="sounds-controls">
+          <button id="nature" data-action="natureSound" class="cards-sounds"><i class="ph ph-tree"></i></button>
+          <button id="rain" data-action="rainSound" class="cards-sounds"><i class="ph ph-cloud-rain"></i></button>
+          <button id="coffe" data-action="coffeSound" class="cards-sounds"><i class="ph ph-storefront"></i></button>
+          <button id="flame" data-action="flameSound" class="cards-sounds"><i class="ph ph-fire"></i></button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
